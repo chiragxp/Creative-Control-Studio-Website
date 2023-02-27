@@ -1,0 +1,51 @@
+/* 1023px to 1200px : Bigger Screens */
+@media only screen and (max-width:1200px) {
+    .hero-text-box{
+        width: 100%;
+        padding: 2%;
+    }
+
+    .row{
+        padding: 0 2%;
+    }
+}
+
+/* 767px to 1023px : Big Tablets */
+@media only screen and (max-width:1023px) {
+
+    body{ font-size: 18px; }
+    section{ padding: 60px 0; }
+
+    .long-copy{ width: 80%; padding-left: 10%; }
+
+    .sec-cities div{ line-height: 145%; }
+    .sec-cities ion-icon{ width: 20px; }
+
+    .plan-box{ width: 100%; margin: 0; }
+    .plan-price{ font-size: 250%; }
+
+    .contact-form{ width: 80%; }
+    
+}
+
+/* 480px to 767px : Small Tablets */
+@media only screen and (max-width:767px) {
+    body{ font-size: 16px; }
+    section{ padding: 30px 0; }
+    .row, .hero-text-box{ padding: 0 4%; }
+
+    .col{ width: 100%; margin: 0 0 4% 0;}
+
+    .main-nav{display: none;}
+
+    h1{font-size: 180%;}
+    h2{font-size: 150%;}
+
+    .long-copy{ width: 100%; margin-left: 0; }
+}
+
+/* 0 to 480px : Small Phones */
+@media only screen and (max-width:480px) {
+    section{ padding: 25px 0; }
+    .contact-form{width: 100%;}
+}

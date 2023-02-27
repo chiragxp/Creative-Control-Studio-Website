@@ -1,0 +1,370 @@
+/* --------------------------------------------------- */
+/* ----------------BASIC SETUP------------------------ */
+/* --------------------------------------------------- */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #ffffff;
+    color: #555555;
+    font-family: 'Lato', 'Verdana', sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/* --------------------------------------------------- */
+/* ----------------PRE DEFINED CLASSES---------------- */
+/* --------------------------------------------------- */
+
+h1, h2, h3{
+    font-weight: 400;
+}
+
+h1{
+    word-spacing: 4px;
+    margin: 10px 0;
+    color: white;
+    font-size: 250%;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin: 15px auto;
+    letter-spacing: 1px;
+}
+
+h3{
+    font-size: 110%;
+    margin: 5% 0;
+}
+
+header{
+    background-image: linear-gradient(#000000a1, #000000a1), url(img/heroimg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* --------------------------------------------------- */
+/* -------------USER DEFINED CLASSES------------------ */
+/* --------------------------------------------------- */
+
+/* HEADER */
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row h3{
+    text-align: center;
+}
+
+.row h2:after{
+    content: " ";
+    display: block;
+    background-color: #8e44ad;
+    border: solid #8e44ad 1.5px;
+    margin: 25px 45% auto 45%;
+}
+
+.box{
+    padding: 20px 0;
+}
+
+.logo{
+    height: 80px;
+    width: auto;
+    float: left;
+    margin: 1.8% auto;
+    background-color: white;
+    border: solid white 2px;
+    border-radius: 50px;
+}
+
+.logo-sml{
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-top: 12px;
+    background-color: white;
+    border: solid white 2px;
+    border-radius: 50px;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin: 1.8% auto;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin: 25px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    padding: 6px 8px;
+    border-bottom: solid 2px transparent;
+    border-radius: 8px;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: solid #ececec 4px;
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display: inline-block;
+    color: white;
+    padding: 10px 30px;
+    font-weight: 300;
+    border: solid white 2px;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]{
+    background-color: #8e44ad;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #27ae60;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: #27ae60;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    background-color: rgb(20, 20, 20);
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    background-color: #27ae60;
+}
+
+/* CITIES */
+
+.sec-cities{
+    margin: 4% auto;
+}
+
+.city-desc{
+    line-height: 145%;
+}
+
+.box img{
+    width: 100%;
+}
+
+/* CUSTOMER REVIEWS */
+
+.sec-cust{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.550), rgba(0, 0, 0, 0.550)), url(img/custbg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 5%;
+    color: whitesmoke;
+}
+
+.sec-cust h2{
+    margin-top: 7%;
+    margin-bottom: 3%;
+}
+
+.sec-cust h2:after{
+    background-color: #fff;
+    border: 1px solid white;
+}
+
+.sec-cust blockquote{
+    padding: 2%;
+    font-style: italic;
+    margin-bottom: 20%;
+    line-height: 145%;
+}
+
+.sec-cust blockquote:before{
+    content: "\201C";
+    font-size: 400%;
+}
+
+.sec-cust cite{
+    display: block;
+    font-size: 90%;
+    margin-top: 25px;
+}
+
+.cust img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50px;
+    vertical-align: middle;
+}
+
+/* SECTION PLANS */
+
+.sec-plans{
+    background-color: #f4f4f4;
+}
+
+.sph h2{
+    margin-top: 70px;
+}
+
+.plan-box{
+    background-color: white;
+    border-radius: 8px;
+    margin-left: 5%;
+    box-shadow: 0 2px 10px rgb(206, 206, 206);
+    margin-bottom: 50px;
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid purple;
+}
+
+.plan-price{
+    font-size: 150%;
+    margin-bottom: 10px;
+}
+
+.plan-box ul{
+    list-style: none;
+}
+
+.plan-box ul li{
+    padding: 5px 0;
+}
+
+.plan-box ion-icon{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.plan-box div:first-child{
+    background-color: #fcfcfc;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.plan-box div:last-child{
+    text-align: center;
+    border: transparent;
+}
+
+/* SECTION CONTACT FORM */
+
+.sec-form{
+    margin: 4% auto;
+}
+
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text], input[type=email], select, textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+
+*:focus{
+    outline-color: darkgray;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(10, 10, 10);
+    color: whitesmoke;
+    padding: 50px;
+}
+
+footer p{
+    color: rgb(99, 99, 99);
+    text-align: center;
+    font-size: 90%;
+    margin-top: 30px;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+
+.social-links{
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+    color: #8e44ad;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #8e44ad;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.social-links li a:hover,
+.social-links li a:active{
+    color: whitesmoke;
+}
